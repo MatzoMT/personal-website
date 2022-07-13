@@ -1,40 +1,28 @@
 <script>
 	export let name;
+	import Experience from './Experience.svelte';
+	let src="./meiniceland.png";
 </script>
 
-<main>
-	<nav class="bg-blue-900 shadow-lg">
-		<div class="container mx-auto">
-		  <div class="sm:flex">
-			<a href="#" class="text-white text-3xl font-bold p-3">APP LOGO</a>
-			
-			<!-- Menus -->
-			<div class="ml-55 mt-4">
-			  <ul class="text-white sm:self-center text-xl">
-				<li class="sm:inline-block">
-				  <a href="#" class="p-3 hover:text-red-900">About</a>
-				</li>
-				<li class="sm:inline-block">
-				  <a href="#" class="p-3 hover:text-red-900">Services</a>
-				</li>
-				<li class="sm:inline-block">
-				  <a href="#" class="p-3 hover:text-red-900">Blog</a>
-				</li>
-				<li class="sm:inline-block">
-				  <a href="#" class="p-3 hover:text-red-900">Contact</a>
-				</li>
-			  </ul>
-			</div>
-	  
-		  </div>
-		</div>
-	  </nav>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+
+<section class="w-full h-screen">
+	<img
+	  src="images/meiniceland.jpeg"
+	  class="object-cover w-full h-full"
+	  alt="Image alt text"
+	/> 
+  </section>
 
 <style global lang="postcss">
 	@tailwind base;
 	@tailwind components;
 	@tailwind utilities;
+	html, 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
   </style>
