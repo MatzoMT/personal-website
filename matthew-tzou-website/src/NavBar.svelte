@@ -1,25 +1,30 @@
 
 
-<nav class="flex items-center p-6">
-    <ul class="flex align-middle">
-    <li class="mr-6 align-middle">
-      <a class="text-blue-500 hover:text-blue-800" href="#">About Me</a>
-    </li>
-    <li class="mr-6">
-      <a class="text-blue-500 hover:text-blue-800" href="#">Experience</a>
-    </li>
-    <li class="mr-6">
-      <a class="text-blue-500 hover:text-blue-800" href="#">Contact Me</a>
-    </li>
-    <li class="mr-6">
-      <a class="text-gray-400 cursor-not-allowed" href="#">Disabled</a>
-    </li>
-  </ul>
+<nav class="flex items-center justify-between p-6 bg-black">
+    <div>
+        <h1 class="text-white">Matthew Tzou</h1>
+    </div>
+    <div>
+        <ul class="flex align-middle">
+            <li class="ml-6 align-middle no-underline">
+              <a class="text-white hover:no-underline visited:text-white">About Me</a>
+            </li>
+            <li class="ml-6">
+              <a class="text-white hover:no-underline visited:text-white">Experience</a>
+            </li>
+            <li class="ml-6">
+              <a class="text-white hover:no-underline visited:text-white">Contact Me</a>
+            </li>
+            <li class="ml-6">
+              <a class="text-gray-400 cursor-not-allowed visited:text-white">Disabled</a>
+            </li>
+          </ul>
+    </div>
+
 </nav>
 
 <style>
   nav {
-    background-color: #000000;
     position: fixed;
     width: 100%;
     height: 4em;
